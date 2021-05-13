@@ -108,6 +108,19 @@ function keyDownAction(event){
         blockUpdate("thor_legs.png")
 
  }
+ if(event.keyCode==77 && event.shiftKey==true){
+    partWidth-=10
+    partHeight-=10
+    document.getElementById("currentW").textContent=blockWidth;
+    document.getElementById("currentH").textContent=blockHeight;
+}
+if(event.keyCode==80 && event.shiftKey==true){
+    blockWidth+=10
+    blockHeight+=10
+    document.getElementById("currentW").textContent=blockWidth;
+    document.getElementById("currentH").textContent=blockHeight;
+}
+
 
 }
  function goLeft(){
